@@ -9,27 +9,31 @@ document.body.appendChild(list);
 for (let i=0; i < 100; i++)
 {
     const listItem = document.createElement("li");
-    let content = "";
-    if ( ( (i+1) % 3 === 0) && ( (i+1) % 5 === 0) )
+
+    if ( ( (i+1) % 3 === 0) && ( (i+1) % 5 === 0) ) 
     {
         // console.log(`FizzBuzz`);
-        listItem.innerHTML = `FizzBuzz`;
+        listItem.innerHTML = `FizzBuzz`; //scrivo nel li
+        listItem.classList.add("threeAndFive");
     } 
-    else if ( (i+1) % 3 === 0)
+    else if ( (i+1) % 3 === 0) 
     {
         // console.log(`Fizz`);
-        listItem.innerHTML = `Fizz`;
+        listItem.innerHTML = `Fizz`; //scrivo nel li
+        listItem.classList.add("three");
     }
-    else if ( (i+1) % 5 === 0)
+    else if ( (i+1) % 5 === 0) 
     {
         // console.log(`Buzz`);
-        listItem.innerHTML = `Buzz`;
+        listItem.innerHTML = `Buzz`; //scrivo nel li
+        listItem.classList.add("five");
     }
-    else
+    else 
     {
         // console.log(i+1);
-        listItem.innerHTML = `${i+1}`;
+        listItem.innerHTML = `${i+1}`; //scrivo nel li
+        listItem.classList.add("basic");
     }
-    list.append(listItem);
-        
+
+    list.append(listItem); //aggiungo elemento li alla lista
 }

@@ -16,3 +16,19 @@ h1 {
 .centered {
     text-align: center;
 }
+
+.basic {
+    background-color: #1389B2;
+}
+
+.three {
+    background-color: #0BD6A1;
+}
+
+.five {
+    background-color: #FFD166;
+}
+
+.threeAndFive {
+    background: #F0466F;
+}
